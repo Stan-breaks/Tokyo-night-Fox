@@ -1,48 +1,31 @@
-/*
-*  Hi~
-*
-*  The theme Another Oneline uses code from
-*  👉 https://github.com/JarnotMaciej/Essence 👈 Thank you~~ 🤗
-*/
-
-/* Just comment the lines or block for the elements you WANT to see */
-
-/* Menu button */
 #PanelUI-button {
   -moz-box-ordinal-group: 0 !important;
   order: -2 !important;
   margin: 2px !important;
-  /* display: none !important; */
 }
 
-/* Window control buttons (min, resize and close) */
 .titlebar-buttonbox-container {
   display: none !important;
   margin-right: 12px !important;
 }
 
-/* Page back and foward buttons */
 #back-button,
 #forward-button {
   display: none !important;
 }
 
-/* Extensions button */
 #unified-extensions-button {
   display: none !important;
 }
 
-/* Extension name inside URL bar */
 #identity-box.extensionPage #identity-icon-label {
   visibility: collapse !important;
 }
 
-/* All tabs (v-like) button */
 #alltabs-button {
   display: none !important;
 }
 
-/* URL bar icons */
 #identity-permission-box,
 #star-button-box,
 #identity-icon-box,
@@ -53,23 +36,16 @@
   display: none !important;
 }
 
-/* "This time search with:..." */
 #urlbar .search-one-offs {
   display: none !important;
 }
 
-/* --- ~END~ element visibility section --- */
-
-/* Navbar size calc */
 :root {
   --tab-border-radius: 6px !important; /*  Tab border radius -- Changes the tabs rounding  */ /*  Default: 6px  */
   --NavbarWidth: 43; /*  Default values: 36 - 43  */
   --TabsHeight: 36; /*  Minimum: 30  */ /*  Default: 36  */
   --TabsBorder: 8; /*  Doesnt do anything on small layout  */ /*  Default: 8  */
-  --NavbarHeightSmall: calc(var(--TabsHeight) + var(--TabsBorder))
-    /*  Only on small layout  */
-    /*  Default: calc(var(--TabsHeight) + var(--TabsBorder))  */
-    /*  Default as a number: 44  */;
+  --NavbarHeightSmall: calc(var(--TabsHeight) + var(--TabsBorder));
 }
 
 @media screen and (min-width: 1325px) /* Only the tabs space will grow from here */ {
@@ -151,36 +127,30 @@
   min-height: calc(var(--TabsHeight) * 1px) !important;
 }
 
-/*  Removes urlbar border/background  */
 #urlbar-background {
   border: none !important;
   outline: none !important;
   transition: 0.15s !important;
 }
 
-/*  Removes the background from the urlbar while not in use  */
 #urlbar:not(:hover):not([breakout][breakout-extend]) > #urlbar-background {
   box-shadow: none !important;
   background: #0000 !important;
 }
 
-/*  Removes annoying border  */
 #navigator-toolbox {
   border: none !important;
 }
 
-/* Fades window while not in focus */
 #navigator-toolbox-background:-moz-window-inactive {
   filter: contrast(90%);
 }
 
-/* Remove fullscreen warning border */
 #fullscreen-warning {
   border: none !important;
   background: -moz-Dialog !important;
 }
 
-/*  Tabs close button  */
 .tabbrowser-tab:not(:hover) .tab-close-button {
   opacity: 0% !important;
   transition: 0.3s !important;
